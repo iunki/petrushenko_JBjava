@@ -23,29 +23,17 @@ public class ScoreServiceImpl implements ScoreService {
 
     @Override
     public BigInteger getSum(Student student) {
-        try {
-            return scoreRepository.getSum(student.getId());
-        } catch (NullPointerException e) {
-            return null;
-        }
+        return scoreRepository.getSum(student.getId());
     }
 
     @Override
     public BigDecimal getAvg(Student student) {
-        try {
-            return scoreRepository.getAvg(student.getId());
-        } catch (NullPointerException e) {
-            return null;
-        }
+        return scoreRepository.getAvg(student.getId());
     }
 
     @Override
     public Integer getScore(Student student, Integer subject) {
-        try {
-            return scoreRepository.getScore(student.getId(), Subject.getSubject(subject));
-        } catch (NullPointerException e) {
-            return null;
-        }
+        return scoreRepository.getScore(student.getId(), Subject.getSubject(subject));
     }
 
     @Override
