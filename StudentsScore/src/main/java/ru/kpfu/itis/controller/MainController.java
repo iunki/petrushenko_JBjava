@@ -47,21 +47,4 @@ public class MainController {
         model.addAttribute("score", scoreService.getScore(student, subject));
         return "score";
     }
-
-    /*@RequestMapping(value = "/add_to_db")  //заполнение БД
-    public String addForDB(){
-        for (int i = 0; i<11; i++){
-            Student student = new Student();
-            student.setFirstname("Yulia"+i);
-            student.setSurname("Petrushenko"+i);
-            student.setLastname("Aleksandrovna"+i);
-            student.setStudgroup("11-406");
-            Score score = new Score();
-            score.setStudent(student);
-            score.setSubject_type(Subject.DATABASES);
-            score.setScore(100);
-            scoreService.addScore(score);
-        }
-        return "redirect:/";
-    }*/
 }
