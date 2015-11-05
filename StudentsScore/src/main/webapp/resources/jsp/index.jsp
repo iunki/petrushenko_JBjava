@@ -2,69 +2,7 @@
 <html>
 <head>
     <title></title>
-    <style>
-        .notebook {
-            width: 300px;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-
-        .notebook > input {
-            display: none;
-        }
-
-        .notebook > input + label {
-            display: inline-block;
-            border: 1px solid gray;
-            padding: 4px;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .notebook > input + label:not(:last-of-type) {
-            border-right: none;
-        }
-
-        .notebook > input + label:hover {
-            color: blue;
-        }
-
-        .notebook > input + label:last-of-type::after {
-            display: block;
-            border-bottom: 1px solid gray;
-            width: 2000px;
-            content: "";
-            position: absolute;
-            bottom: -1px;
-            left: 100%;
-        }
-
-        .notebook > input:checked + label {
-            color: blue;
-            border-bottom: none;
-            padding-bottom: 5px;
-        }
-
-        .notebook > input:checked + label:last-of-type::after {
-            bottom: 0px;
-        }
-
-        .notebook > div {
-            white-space: normal;
-            display: none;
-            border: 1px solid gray;
-            border-top: none;
-            margin: 0px;
-            padding: 2px 20px;
-        }
-
-        .notebook > input:nth-of-type(1):checked ~ div:nth-of-type(1),
-        .notebook > input:nth-of-type(2):checked ~ div:nth-of-type(2),
-        .notebook > input:nth-of-type(3):checked ~ div:nth-of-type(3),
-        .notebook > input:nth-of-type(4):checked ~ div:nth-of-type(4) {
-            display: block;
-        }
-    </style>
+    <script src="../css/style.css"></script>
 </head>
 <body>
 <div class="notebook">

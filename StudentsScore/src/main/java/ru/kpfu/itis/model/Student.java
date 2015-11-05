@@ -1,4 +1,5 @@
 package ru.kpfu.itis.model;
+
 import javax.persistence.*;
 
 @Entity
