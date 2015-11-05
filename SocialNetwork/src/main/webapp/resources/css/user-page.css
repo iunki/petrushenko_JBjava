@@ -1,0 +1,36 @@
+
+#avatar{
+    height: 150px;
+    weight: 150px;
+    margin-right: 30px;
+}
+#user-profile{
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    background-color: #886176;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    color: #e6e6e6;
+}
+
+#js-sendtweet{
+    float: right;
+    margin: 3px;
+
+}
+#js-tweet-text{
+    border-radius: 10px 10px 0 0;
+}
+#button-field{
+    background-color: #F8F1FF;
+    border-radius: 0 0 10px 10px;
+}
+
+#send-field{
+    background-color: #AFD2E9;
+}
+
+#js-tweets{
+    background-color: #AFD2E9;
+    padding-bottom: 15px;
+    border-radius: 0 0 10px 10px;
+}
